@@ -15,7 +15,8 @@ function App() {
   const [lose, setLose] = useState(false);
   const [won, setWon] = useState(false);
 
-
+  // console.log(word)
+  
   // Determinar si el jugador perdio.
   useEffect(() => {
     
@@ -44,7 +45,6 @@ function App() {
 
     if(!word.includes(letter)){
       setAttempts( Math.min(attempts + 1, 9) )
-      
       return;
     }
 
